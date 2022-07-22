@@ -194,6 +194,12 @@ img {
 /*========== Main ==========*/
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.container {
+    padding: 0 5%;
 }
     /*========== Home ==========*/
     .home-container {
@@ -213,6 +219,67 @@ main {
     .home p {
         margin: 1.625rem 0;
         color: var(--gray-400);
+    }
+    /*========== Services ==========*/
+    .services {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .services h3 {
+        font-weight: 500;
+        font-size: 1.625rem;
+    }
+    .services .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .services .card {
+        padding: 2.375rem;
+        border-radius: 24px;
+        max-width: 21.25rem;
+    }
+    .services .card:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .services .card header span {
+        color: var(--white-50);
+        padding: 1.25rem;
+        border-radius: 16px;
+    }
+    .services .card header span.blue {
+        background-color: var(--blue-50);
+    }
+    .services .card header span.green {
+        background-color: var(--green-50);
+    }
+    .services .card header span.red {
+        background-color: var(--red-50);
+    }
+    .services .card header h4 {
+        font-weight: 700;
+        font-size: 1.625rem;
+        margin: 1.625rem 0;
+    }
+    .services .card p {
+        color: var(--gray-400);
+        font-size: 1.125rem;
+    }
+    .services .card button {
+        border: none;
+        background-color: var(--gray-100);
+        color: var(--gray-300);
+        font-size: 1.125rem;
+        font-weight: 500;
+        padding: .75rem 1rem;
+        border-radius: 12px;
+        margin-top: 2.375rem;
+    }
+    .services .card button:hover {
+        background-color: var(--blue-50);
+        color: var(--white-50);
+        cursor: pointer;
     }
 
 
@@ -301,5 +368,9 @@ main {
             }
             .home p {
                 font-size: 1.125rem;
+            }
+        /*========== Services ==========*/
+            .services h3 {
+                font-size: 2.25rem;
             }
 }

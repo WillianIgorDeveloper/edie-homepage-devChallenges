@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!--========== GoogleIcons ==========-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
 
     <!--========== Guide ==========-->
     <link rel="shortcut icon" href="assets/icons/devchallenges.png" type="image/x-icon">
@@ -26,17 +26,18 @@
     <header class="header">
       <h1>Edie</h1>
       <nav>
-        <span class="material-symbols-outlined menuHandle">menu</span>
+        <span class="material-symbols-rounded menuHandle">menu</span>
         <ul id="menu">
-          <li><span class="material-symbols-outlined menuHandle">close</span></li>
+          <li><span class="material-symbols-rounded menuHandle">close</span></li>
           <li class="menuHandle"><a href="#home">Home</a></li>
-          <li class="menuHandle"><a href="#">Services</a></li>
+          <li class="menuHandle"><a href="#services">Services</a></li>
           <li class="menuHandle"><a href="#">Our Works</a></li>
           <li class="menuHandle"><a href="#">Clients</a></li>
           <li class="menuHandle"><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section id="home" class="home">
         <div class="home-container">
@@ -55,8 +56,38 @@
           </form>
         </div>
       </section>
-      <section class="container"></section>
+
+      <section id="services" class="services container">
+        <h3>We offer high demand services</h3>
+        <div class="card-container">
+          <div class="card">
+            <header>
+              <span class="material-symbols-rounded blue">edit</span>
+              <h4>UI/UX Design</h4>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <button>Get started</button>
+          </div>
+          <div class="card">
+            <header>
+              <span class="material-symbols-rounded green">code</span>
+              <h4>Front End</h4>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <button>Get started</button>
+          </div>
+          <div class="card">
+            <header>
+              <span class="material-symbols-rounded red">storage</span>
+              <h4>Back End</h4>
+            </header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+            <button>Get started</button>
+          </div>
+        </div>
+      </section>
     </main>
+
     <footer class="container"></footer>
 
     <!--========== Script ==========-->
@@ -71,13 +102,3 @@
     </script>
   </body>
 </html>
-
-<!-- <style>
-  .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 1,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
-  }
-  </style> -->
