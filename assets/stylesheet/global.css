@@ -165,7 +165,7 @@ img {
     color: var(--white-50);
 
     left: 0;
-    top: -100%;
+    top: -150%;
     transition: top 500ms;
 }
 .header nav ul.show {
