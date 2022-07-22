@@ -42,13 +42,13 @@ button - normal / hover
     /*========== Colors ==========*/
     --white-50: #fff;
 
-    --geay-600: #F2F2F2;
-    --gray-500: #E0E0E0;
-    --gray-400: #BDBDBD;
+    --geay-50: #F2F2F2;
+    --gray-100: #E0E0E0;
+    --gray-200: #BDBDBD;
     --gray-300: #828282;
-    --gray-200: #4F4F4F;
-    --gray-100: #333333;
-    --gray-50: #000000; 
+    --gray-400: #4F4F4F;
+    --gray-500: #333333;
+    --gray-600: #000000; 
 
     --blue-50: #2D9CDB;
     --blue-100: #100E1D;
@@ -69,6 +69,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 body {
     padding: 0.75rem;
@@ -77,6 +78,10 @@ body {
     min-height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--gray-500);
+    background-color: var(--white-50);
 }
 img {
     width: 100%;
@@ -85,12 +90,112 @@ img {
 
 
 
-/*==========  ==========*/
+/*========== Header ==========*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    font: 800 1.625rem 'Heebo', sans-serif;
+}
+.header nav span {
+    cursor: pointer;
+}
+.header nav span:hover {
+    transform: scale(1.5, 1.5);
+}
+.header nav ul {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.375rem;
+    background-color: var(--blue-100);
+    color: var(--white-50);
+
+    left: 0;
+    top: -100%;
+    transition: top 500ms;
+}
+.header nav ul.show {
+    top: 0;
+    transition: top 500ms;
+}
+.header nav ul li span {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+}
+.header nav ul li a {
+    font-weight: 500;
+    color: var(--white-50);
+    font-size: 1.25rem;
+}
+.header nav ul li:hover a {
+    font-weight: 700;
+}
+/*====================
+    Estilização de ativo para cada sessão
+====================*/
 
 
 
 /*==================== 
-    Screens bigger than Xpx
+    Screens bigger than 600px
 ====================*/
-@media () {
+@media (min-width: 600px) {
+    /*========== Global ==========*/
+        body {
+            padding: 1rem;
+        }
+    /*========== Header ==========*/
+        .header h1 {
+            font-size: 2.25rem;
+        }
+        .header nav span {
+            font-size: 2.25rem;
+        }
+        .header nav ul li a {
+            font-size: 1.5rem;
+        }
+}
+
+
+
+/*==================== 
+    Screens bigger than 768px
+====================*/
+@media (min-width: 768px) {
+    /*========== Header ==========*/
+        .header nav span {
+            cursor: pointer;
+            position: fixed;
+            top: -100%;
+        }
+        .header nav ul {
+            position: unset;
+            height: unset;
+            width: unset;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 2.375rem;
+            background-color: unset;
+        }
+        .header nav ul li span {
+            position: unset;
+        }
+        .header nav ul li a {
+            font-weight: 500;
+            color: var(--gray-500);
+            font-size: 1.5rem;
+        }
+        .header nav ul li:hover a {
+            font-weight: 500;
+        }
 }

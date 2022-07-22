@@ -23,6 +23,33 @@
     <title>Edie Homepage - devChallenges</title>
   </head>
   <body>
+    <header class="header">
+      <h1>Edie</h1>
+      <nav>
+        <span class="material-symbols-outlined menuHandle">menu</span>
+        <ul id="menu">
+          <li><span class="material-symbols-outlined menuHandle">close</span></li>
+          <li class="menuHandle"><a href="#">Home</a></li>
+          <li class="menuHandle"><a href="#">Services</a></li>
+          <li class="menuHandle"><a href="#">Our Works</a></li>
+          <li class="menuHandle"><a href="#">Clients</a></li>
+          <li class="menuHandle"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <!--========== Script ==========-->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.menuHandle').forEach(element => {
+          element.onclick = () => {
+            document.querySelector('#menu').classList.toggle('show')
+          }
+        });        
+      })
+    </script>
   </body>
 </html>
 
