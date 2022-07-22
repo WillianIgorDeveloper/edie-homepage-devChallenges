@@ -11,9 +11,7 @@ font-family: 'Poppins', sans-serif;
 12px > 14 - 0.875rem
 10px > 12px - 0.75rem
 
-input
 button - normal / hover
-
 */
 
 /*==================== 
@@ -90,6 +88,55 @@ img {
 
 
 
+/*========== Components ==========*/
+    /*========== E-mail form ==========*/
+        .e-mail label {
+            font-size: 0.75rem;
+            color: var(--gray-300);
+        }
+        .e-mail-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--geay-50);
+            padding: .25rem;
+            border-radius: 12px;
+            font-size: 0.875rem;
+        }
+        .e-mail input {
+            border: none;
+            background-color: unset;
+            margin-left: .75rem;
+            font-weight: 500;
+            width: 100%;
+        }
+        .e-mail input::placeholder {
+            color: var(--gray-200);
+        }
+        .e-mail input:focus {
+            outline: none;
+        }
+        .e-mail button {
+            font-weight: 500;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 12px;
+            background-color: var(--blue-50);
+            color: var(--geay-50);
+        }
+        .e-mail button:hover {
+            transform: scale(1.2, 1.2);
+        }
+        @media (min-width: 768px) {
+            .e-mail label {
+                font-size: 0.875rem;
+            }
+            .e-mail-container {
+                font-size: 1.125rem;
+            }
+        }
+
+
+
 /*========== Header ==========*/
 .header {
     display: flex;
@@ -144,6 +191,32 @@ img {
 
 
 
+/*========== Main ==========*/
+main {
+    flex: 1;
+}
+    /*========== Home ==========*/
+    .home-container {
+        padding: 2.375rem;
+    }
+    .home h2, h3 {
+        font-weight: 500;
+        font-size: 1.625rem;
+    }
+    .home h2 span {
+        font-size: 0.875rem;
+        color: var(--blue-50);
+    }
+    .home img {
+        border-radius: 16px;
+    }
+    .home p {
+        margin: 1.625rem 0;
+        color: var(--gray-400);
+    }
+
+
+
 /*==================== 
     Screens bigger than 600px
 ====================*/
@@ -162,6 +235,11 @@ img {
         .header nav ul li a {
             font-size: 1.5rem;
         }
+    /*========== Main ==========*/
+        /*========== Home ==========*/
+            .home .home-container:last-child {
+                max-width: 65%;
+            }
 }
 
 
@@ -198,4 +276,30 @@ img {
         .header nav ul li:hover a {
             font-weight: 500;
         }
+        .header nav ul li:hover {
+            font-weight: 500;
+            transform: scale(1.075, 1.075);
+            transition: 300ms;
+        }
+        /*====================
+        Estilização de ativo para cada sessão
+       ====================*/
+
+    /*========== Main ==========*/
+        /*========== Home ==========*/
+            .home-container {
+                padding: 2.375rem 15%;
+            }
+            .home h2 {
+                font-size: 3rem;
+            }
+            .home h2 span {
+                font-size: 1.125rem;
+            }
+            .home h3 {
+                font-size: 2.25rem;
+            }
+            .home p {
+                font-size: 1.125rem;
+            }
 }

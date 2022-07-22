@@ -29,7 +29,7 @@
         <span class="material-symbols-outlined menuHandle">menu</span>
         <ul id="menu">
           <li><span class="material-symbols-outlined menuHandle">close</span></li>
-          <li class="menuHandle"><a href="#">Home</a></li>
+          <li class="menuHandle"><a href="#home">Home</a></li>
           <li class="menuHandle"><a href="#">Services</a></li>
           <li class="menuHandle"><a href="#">Our Works</a></li>
           <li class="menuHandle"><a href="#">Clients</a></li>
@@ -37,8 +37,27 @@
         </ul>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section id="home" class="home">
+        <div class="home-container">
+          <h2><span>Unhappy with your website?</span><br>We create beautiful<br>and fast web services</h2>
+        </div>
+        <img src="assets/img/heroImage.jpg" alt="Edie team">
+        <div class="home-container">
+          <h3>Story, emotion and purpose</h3>
+          <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+          <form onsubmit="return false;" class="e-mail">
+            <label for="e-mail">Want us to contact you?</label><br>
+            <div class="e-mail-container">
+              <input placeholder="Email" type="email" name="e-mail" id="e-mail">
+              <button type="submit">Join</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="container"></section>
+    </main>
+    <footer class="container"></footer>
 
     <!--========== Script ==========-->
     <script>
