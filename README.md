@@ -10,6 +10,7 @@
 <ul>
    <li>HTML</li>
    <li>CSS</li>
+   <li>JavaScript</li>
 </ul>
 
 <h2 align="center"><a href="https://willianprof.github.io/edie-homepage-devChallenges/">Demo</a></h2>
