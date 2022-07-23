@@ -235,38 +235,38 @@ main {
         flex-wrap: wrap;
         justify-content: space-around;
     }
-    .services .card {
+    .services .card-services {
         padding: 2.375rem;
         border-radius: 24px;
         max-width: 21.25rem;
     }
-    .services .card:hover {
+    .services .card-services:hover {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-    .services .card header span {
+    .services .card-services header span {
         color: var(--white-50);
         padding: 1.25rem;
         border-radius: 16px;
     }
-    .services .card header span.blue {
+    .services .card-services header span.blue {
         background-color: var(--blue-50);
     }
-    .services .card header span.green {
+    .services .card-services header span.green {
         background-color: var(--green-50);
     }
-    .services .card header span.red {
+    .services .card-services header span.red {
         background-color: var(--red-50);
     }
-    .services .card header h4 {
+    .services .card-services header h4 {
         font-weight: 700;
         font-size: 1.625rem;
         margin: 1.625rem 0;
     }
-    .services .card p {
+    .services .card-services p {
         color: var(--gray-400);
         font-size: 1.125rem;
     }
-    .services .card button {
+    .services .card-services button {
         border: none;
         background-color: var(--gray-100);
         color: var(--gray-300);
@@ -276,12 +276,43 @@ main {
         border-radius: 12px;
         margin-top: 2.375rem;
     }
-    .services .card button:hover {
+    .services .card-services button:hover {
         background-color: var(--blue-50);
         color: var(--white-50);
         cursor: pointer;
     }
-
+    /*========== Our Works ==========*/
+    .our-works h3 {
+        font-weight: 500;
+        font-size: 1.625rem;
+        margin-bottom: 2rem;
+    }
+    .our-works .card-container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+    .card-our-works img {
+        border-radius: 24px;
+    }
+    .card-our-works p {
+        font-weight: 300;
+        color: var(--gray-300);
+        font-size: 0.875rem;
+    }
+    .card-our-works h4 {
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+    .our-works a {
+        font-weight: 500;
+        font-size: 1.25rem;
+        color: var(--blue-50);
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+        margin-top: 1.625rem;
+    }
 
 
 /*==================== 
@@ -307,6 +338,16 @@ main {
             .home .home-container:last-child {
                 max-width: 65%;
             }
+        /*========== Our Works ==========*/
+        .our-works .card-container {
+            grid-template-columns: auto auto;
+        }
+        .our-works .card-container .card-our-works:nth-child(even) {
+            margin-bottom: 4rem;
+        }
+        .our-works .card-container .card-our-works:nth-child(odd) {
+            margin-top: 4rem;
+        }
 }
 
 
