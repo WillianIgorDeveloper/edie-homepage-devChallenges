@@ -13,4 +13,4 @@
    <li>JavaScript</li>
 </ul>
 
-<h2 align="center"><a href="https://yellowmoonastronaut.github.io/edie-homepage-devChallenges/">Demo</a></h2>
+<h2 align="center"><a href="https://willianigordeveloper.github.io/edie-homepage-devChallenges/">Demo</a></h2>
